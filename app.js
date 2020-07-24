@@ -1,30 +1,30 @@
 var questions = {
     "1": {
-        question: "Which one is the capital city of Pakistan?",
+        question: "Q.1 Which one is the capital city of Pakistan?",
         correct: "Islamabad",
         opt : ["Balochistan","Hyderabad","Karachi","Islamabad"],
         answer: "",
     },
     "2": {
-        question: "The longest river in Pakistan is",
+        question: "Q.2 The longest river in Pakistan is",
         correct: "River Sindh",
         opt: ["River Balochistan","River Punjab","River Sindh","River Islamabad"],
         answer: "",
     },
     "3": {
-        question: "Which is the national bird of Pakistan?",
+        question: "Q.3 Which is the national bird of Pakistan?",
         correct: "Chakor",
         opt: ["Chakor","Parrot","Pigeon","Sparrow"],
         answer: "",
     },
     "4": {
-        question: "The biggest Musum is located in",
+        question: "Q.4 The biggest Musum is located in",
         correct: "Karachi",
         opt: ["Qasimabad","Hyderbad","Badeen","Karachi"],
         answer: "",
     },
     "5": {
-        question: "The biggest city of Pakistan?",
+        question: "Q.5 The biggest city of Pakistan?",
         correct: "Karachi",
         opt: ["Lahore","Karachi","Multan","Islamabad"],
         answer: "",
@@ -56,8 +56,9 @@ for (var i = 1; i <= 5; i++) {
         div.appendChild(line);
 
     }
+    var hr = document.createElement("hr");
 
-   
+   div.appendChild(hr);
     quiz.appendChild(div);
 }
 console.log(quiz);

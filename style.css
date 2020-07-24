@@ -21,6 +21,7 @@ body{
 }
 #info{
     margin-bottom: 20px;
+    width: 75%;
 }
 #info label{
     display: inline-block;
@@ -31,8 +32,29 @@ body{
     width: 300px;
     height: 20px;
 }
+#quiz hr{
+    width: 75%;
+    margin: 0 0 !important;
+    margin-top: 10px !important;
+}
 #quiz h2{
-    font-size: 15px;
-    font-family: fantasy;
-    /* font-weight: 15; */
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 15;
+}
+#submit{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#submit button{
+    font-size: 20px;
+
+}
+@media (max-width:680px){
+    #quiz{
+        margin-left: 0px !important;
+    }
 }
