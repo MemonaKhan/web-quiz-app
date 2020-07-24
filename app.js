@@ -61,5 +61,9 @@ for (var i = 1; i <= 5; i++) {
    div.appendChild(hr);
     quiz.appendChild(div);
 }
-console.log(quiz);
+// console.log(quiz);
 
+
+var result = document.getElementById("result");
+
+var table = document.createElement("table");
