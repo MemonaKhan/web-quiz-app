@@ -47,7 +47,7 @@ for (var i = 1; i <= 5; i++) {
         var option1 = document.createElement("input");
         option1.setAttribute("type", "radio");
         option1.setAttribute("name", "ans"+[i]);
-        option1.setAttribute("id", "opt"+[j]);
+        option1.setAttribute("id", "opt"+[i]+[j]);
         
         var line = document.createElement("br");
         div.appendChild(line);
@@ -61,9 +61,27 @@ for (var i = 1; i <= 5; i++) {
    div.appendChild(hr);
     quiz.appendChild(div);
 }
-// console.log(quiz);
+console.log(quiz);
 
+var roll, fname, lname, email, count=0;
+function submit(){
+    roll = document.getElementById("roll-no").value;
+    fname = document.getElementById("first-name").value;
+    fname = document.getElementById("first-name").value;
+    email = document.getElementById("email").value;
+    if(document.getElementById("opt13").checked==true){
+        count++;
+    }
 
+}
+console.log(count);
 var result = document.getElementById("result");
 
-var table = document.createElement("table");
+var table = document.getElementById("res-tab");
+// console.log(table.nodeName())
+var rollNo = document.getElementById("rn");
+var fullName = document.getElementById("name");
+var emailId = document.getElementById("eml");
+var totalMarks = document.getElementById("total");
+var marksObtained = document.getElementById("marks");
+var percentage = document.getElementById("perc");
